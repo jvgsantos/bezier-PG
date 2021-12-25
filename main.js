@@ -1,3 +1,4 @@
+// hotkey
 // aperte s para mostrar ou n os poligonos
 // setas <- e -> trocam os pontos
 // backspace deleta o ponto corrente
