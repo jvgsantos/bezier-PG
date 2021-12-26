@@ -1,32 +1,39 @@
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link href="index.css" rel="stylesheet" type="text/css">
-    <script src="main.js"></script>
-    <title>Modelador de Curvas de Bezier</title>
-</head>
-<body>
-    <h1>Modelador curvas de Bezier (Processamento Gráfico)</h1>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm">
-                <div class="card">
-                    <div class="card-header">Curvas</div>
-                    <ul class= "grupos combinacao-grupos">
-                        <li class="itens">
-                            <div class="botao-grupo" role = "grupo" style="width: 100%;">
-                                <button id = "botao-adicionar" type = "button" class="btn btn-primary">Adicionar</button>
-                                <button id = "botao-remover" type = "button" class="btn btn-secundary">Remover</button>
-                            </div>
-                        </li>
-                        <li class="itens">
-                            <div class="botao-grupo" role = "grupo" style="width: 100%;">
-                                
-                        </li>
-                    </ul>
-</body>
-</html>
+<!DOCTYPE html><html lang="en"><head>
+    <script src="p5.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <iframe style="width: 1000px; height: 1000px; overflow: hidden;"  scrolling="no" frameborder="0" src="https://editor.p5js.org/mateus.costa.beltrao/full/8rip0s0o6"></iframe>
+  </head>
+  <body>
+    <h1> Bezier</h1>
+    <div class="btn-group">
+    <input onclick="create()" type="button" value="Adicionar Curva">
+    <input onclick="proxCurv()" type="button" value="Proxima curva">
+    <input onclick="antCurv()" type="button" value="Curva Anterior">
+    <input onclick="remCurv()" type="button" value="Remover Curva">
+    </div>
+    
+    
+     
+        
+      
+     
+    <h2>Features da Curva Selecionada</h2>
+    
+    <div>
+      <input onclick="mudarEstado()" type="button" value="Adicionar Ponto" id="myButton1">
+       <input onclick="allowPolygons()" type="button" value="Poligonos" id="poligono">
+      <input onclick="allowPoints()" type="button" value="Ponto" id="ponto">
+      <input onclick="allowCurve()" type="button" value="Curva" id="curva">
+    </div>
+     
+    
+   <label>
+    <input type="number" id="avaliacoes" value="10" min="1">
+     Numero de avaliações
+    </label> 
+    <script src="sketch.js"></script>
+  
+
+</body></html>
